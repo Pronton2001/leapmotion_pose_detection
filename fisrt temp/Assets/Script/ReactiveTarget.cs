@@ -6,6 +6,10 @@ public class ReactiveTarget : MonoBehaviour
 {
     public void ReactToHit(){
         StartCoroutine(Die());
+        WanderingAI behavior = GetComponent<WanderingAI>();
+        if (behavior != null){
+            behavior.setAlive(false);
+        }
     }
     
     private IEnumerator Die(){
@@ -15,7 +19,10 @@ public class ReactiveTarget : MonoBehaviour
 
         // this = this script
         // this.gameObject = gameObject that this script is attached to. [this is Optional]
+        Debug.Log("Before Dead enemy gameObject has ID"+this.gameObject.GetInstanceID());
         Destroy(this.gameObject);
+        Debug.Log("After Dead enemy gameObject has ID"+this.gameObject.GetInstanceID());
+
     }
 
 }

@@ -22,7 +22,7 @@ public class RayShooter: MonoBehaviour
             Vector3 point = new Vector3(_camera.pixelWidth/2, _camera.pixelHeight/2, 0);
             Ray ray = _camera.ScreenPointToRay(point);   
             // Ray contain Origin position and direction
-            // In this case origin position is Screen, direction = point - screen
+            // In this case origin position is Screen, direction = screen -> point = ScreenToRay(point)
 
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit)){
@@ -32,7 +32,7 @@ public class RayShooter: MonoBehaviour
 		        ReactiveTarget target = hitObject.GetComponent<ReactiveTarget>();
 		        if(target != null){
                     Debug.Log("Target hit. Hit point" + hit.point);
-                    target.ReactToHit();
+                    target.ReactToHit();    
                 }
                 else {
                 StartCoroutine(SphereIndicator(hit.point));
