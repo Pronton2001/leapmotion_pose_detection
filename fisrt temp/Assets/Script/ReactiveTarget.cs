@@ -11,7 +11,7 @@ public class ReactiveTarget : MonoBehaviour
             behavior.setAlive(false);
         }
     }
-    
+ 
     private IEnumerator Die(){
         this.transform.Rotate(-75,0,0);
 
