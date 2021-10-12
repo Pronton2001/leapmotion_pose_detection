@@ -2,7 +2,7 @@
 
 A project on pose classification where I use heuristic approach to count the number of fingers the user is holding. The fingers dataset is drawn directly from leap motion controller.
 
-The `./fisrt temp/Assets/Script/getInfo()` contains my heuristic approaches. It work very nice and smooth :))
+The `./fisrt temp/Assets/Script/getInfo.cs` contains my heuristic approaches. It work very nice and smooth :))
 
 Todo list: 
 - [x] Build a mini FPS game.
