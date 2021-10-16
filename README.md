@@ -1,6 +1,12 @@
-# UnityGitLFS
-Setup Git with Git LFS for Unity
+# Pose detection with leap motion controller
 
-ClassifyHeristic2() is the combination between ClassifyHeristic1() and planeTest to get a more accuracy result.
+A project on pose classification where I use a heuristic approach to count the number of fingers the user is holding. The fingers dataset is drawn directly from the leap motion controller.
 
-It work very nice and smooth :))
+The `./fisrt temp/Assets/Script/getInfo.cs` contains my heuristic approaches. It works very nice and smoothly :))
+
+Todo list: 
+- [x] Build a mini FPS game.
+- [x] Classify the number of fingers using heuristic methods
+- [ ] Involve machine learning algorithms for poses classification.
+- [ ] Classify more poses: shooting, defending, go forward, left, right, jump,...
+- [ ] Put machine learning model into the mini FPS game then we have an FPS-hand-controller game without mouse and keyboard.
