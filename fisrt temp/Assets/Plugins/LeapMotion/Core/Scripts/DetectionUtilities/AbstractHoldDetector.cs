@@ -170,7 +170,8 @@ namespace Leap.Unity {
     public float Distance { get { return _distance; } }
     public float LastActiveDistance { get { return _lastDistance; } }
 
-
+//_lastHoldTime,_lastReleaseTime, _didChange updated
+  
     protected virtual void changeState(bool shouldBeActive) {
       bool currentState = IsActive;
       if (shouldBeActive) {
