@@ -7,6 +7,6 @@ The `./fisrt temp/Assets/Script/getInfo.cs` contains my heuristic approaches. It
 Todo list: 
 - [x] Build a mini FPS game.
 - [x] Classify the number of fingers using heuristic methods
-- [ ] Involve machine learning algorithms for poses classification.
+- [x] Involve machine learning algorithms for classifying the number of fingers.
 - [ ] Classify more poses: shooting, defending, go forward, left, right, jump,...
-- [ ] Put machine learning model into the mini FPS game then we have an FPS-hand-controller game without mouse and keyboard.
+- [ ] Deploy machine learning model into the mini FPS game then we have an FPS-hand-controller game without mouse and keyboard.
